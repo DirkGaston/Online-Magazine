@@ -1,0 +1,39 @@
+.sidebar {
+
+    padding-left: 3rem;
+    width: 80%;
+    @include phone-view{
+        display: none;
+    }
+
+    &__AboutUs{
+        border-bottom: 1px solid gray;
+    }
+
+    &__Tags{
+        border-bottom: 1px solid gray;
+
+        & ul{
+            padding: 0 1.3rem;
+            list-style: none;
+        }
+
+        & ul li{
+            padding: 2px 1vw;
+            background-color: steelblue;
+            margin-right: 1px;
+            color: white;
+            display: inline;
+        }
+
+    }
+
+    &__Highlights{
+        margin-bottom: 50px;
+
+        & img{
+            width: 14vw;
+            height: 25vh;
+        }
+    }
+}

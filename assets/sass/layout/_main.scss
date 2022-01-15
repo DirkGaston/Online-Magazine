@@ -1,0 +1,30 @@
+.news {
+
+        &__Item{
+            display: inline-block;
+            width: 80%;
+            margin: 5px;
+            cursor: pointer;
+
+            & h2{
+                padding: 1rem;
+            }
+
+            &--body img{
+                height: 40vh;
+                width: 18vw;
+                padding: 0 1rem;
+                
+                @include tablet-view{
+                    width: 40vw;
+                }
+                @include phone-view{
+                    width: 80vw;
+                }
+            }
+
+            &--body p{
+                padding: 5px 10px;
+            }
+    }
+}
